@@ -32,4 +32,4 @@ Como o projeto é uma aplicação web estática, a execução é simples e não 
 
 1. Clone o repositório para a sua máquina:
    ```bash
-   git clone [https://github.com/flplzo/ecotech.git](https://github.com/flplzo/ecotech.git)
+   git clone [https://github.com/flplz/ecotech.git](https://github.com/flplz/ecotech.git)

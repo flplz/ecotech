@@ -1,0 +1,23 @@
+@import "tailwindcss";
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+@layer base {
+  html {
+    font-family: 'Inter', sans-serif;
+    scroll-behavior: smooth;
+    background-color: #F8FAFC;
+    color: #1E293B;
+  }
+}
+
+/* Classes utilitárias customizadas do projeto */
+.card-interativo {
+  transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+}
+
+.card-interativo:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 15px -3px rgba(16, 185, 129, 0.12);
+  border-color: #10B981;
+}

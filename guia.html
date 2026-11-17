@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guia de Descarte - EcoTech</title>
+    <link rel="stylesheet" href="./src/css/output.css">
+</head>
+<body class="bg-[#F8FAFC] text-[#1E293B] min-h-screen flex flex-col">
+
+    <!-- CABEÇALHO E NAVEGAÇÃO SEMÂNTICA -->
+    <header class="w-full max-w-md md:max-w-4xl mx-auto px-4 pt-4">
+        <div class="bg-white border-2 border-[#1E293B] rounded-xl px-4 py-3 shadow-xs">
+            <div class="flex justify-between items-center">
+                <a href="index.html" class="text-xl font-bold tracking-tight text-[#1E293B] flex items-center gap-1.5">
+                    <span class="w-3 h-3 rounded-full bg-[#10B981] inline-block"></span>
+                    EcoTech
+                </a>
+
+                <button id="menu-btn" aria-label="Abrir Menu" class="md:hidden text-[#1E293B] focus:outline-none p-1">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2.2" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"/>
+                    </svg>
+                </button>
+
+                <nav class="hidden md:block">
+                    <ul class="flex space-x-6 text-sm font-semibold">
+                        <li><a href="index.html" class="hover:text-[#10B981] transition">Início</a></li>
+                        <li><a href="guia.html" class="text-[#10B981]">Guia de Descarte</a></li>
+                        <li><a href="ecopontos.html" class="hover:text-[#10B981] transition">Ecopontos</a></li>
+                    </ul>
+                </nav>
+            </div>
+
+            <nav id="mobile-menu" class="hidden md:hidden pt-3 mt-3 border-t border-slate-200">
+                <ul class="flex flex-col space-y-2 text-sm font-semibold">
+                    <li><a href="index.html" class="block py-1 hover:text-[#10B981]">Início</a></li>
+                    <li><a href="guia.html" class="block py-1 text-[#10B981]">Guia de Descarte</a></li>
+                    <li><a href="ecopontos.html" class="block py-1 hover:text-[#10B981]">Ecopontos</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- CONTEÚDO PRINCIPAL -->
+    <main class="flex-grow w-full max-w-md md:max-w-4xl mx-auto px-4 py-6">
+        <h1 class="text-lg md:text-2xl font-bold text-[#1E293B] mb-5">
+            O que você quer descartar?
+        </h1>
+
+        <!-- Lista de Categorias Fiel ao Wireframe -->
+        <section class="flex flex-col space-y-4">
+
+            <!-- Item 1: Baterias e Pilhas -->
+            <article class="bg-white border-2 border-[#1E293B] rounded-2xl p-3.5 flex items-center gap-4 card-interativo">
+                <div class="w-14 h-14 shrink-0 border-2 border-[#1E293B] rounded-xl bg-[#F8FAFC] flex items-center justify-center text-[#1E293B]">
+                    <!-- Ícone Bateria -->
+                    <svg class="w-7 h-7" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                        <rect x="7" y="4" width="10" height="17" rx="2"/>
+                        <path stroke-linecap="round" d="M10 2h4M10 11h4M12 9v4"/>
+                    </svg>
+                </div>
+                <div class="flex-grow">
+                    <h2 class="font-bold text-base text-[#1E293B]">Baterias e Pilhas</h2>
+                    <p class="text-xs text-slate-600 mt-0.5">
+                        Isole os polos metálicos com fita adesiva antes de entregar no coletor para evitar curto-circuito.
+                    </p>
+                </div>
+            </article>
+
+            <!-- Item 2: Monitores e TVs -->
+            <article class="bg-white border-2 border-[#1E293B] rounded-2xl p-3.5 flex items-center gap-4 card-interativo">
+                <div class="w-14 h-14 shrink-0 border-2 border-[#1E293B] rounded-xl bg-[#F8FAFC] flex items-center justify-center text-[#1E293B]">
+                    <!-- Ícone Monitor -->
+                    <svg class="w-7 h-7" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                        <rect x="3" y="4" width="18" height="12" rx="2"/>
+                        <path stroke-linecap="round" d="M8 20h8M12 16v4"/>
+                    </svg>
+                </div>
+                <div class="flex-grow">
+                    <h2 class="font-bold text-base text-[#1E293B]">Monitores e TVs</h2>
+                    <p class="text-xs text-slate-600 mt-0.5">
+                        Transporte com cuidado para não quebrar a tela de vidro ou cristal líquido.
+                    </p>
+                </div>
+            </article>
+
+            <!-- Item 3: Placas e Componentes -->
+            <article class="bg-white border-2 border-[#1E293B] rounded-2xl p-3.5 flex items-center gap-4 card-interativo">
+                <div class="w-14 h-14 shrink-0 border-2 border-[#1E293B] rounded-xl bg-[#F8FAFC] flex items-center justify-center text-[#1E293B]">
+                    <!-- Ícone Placa/Chip -->
+                    <svg class="w-7 h-7" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                        <rect x="4" y="6" width="16" height="12" rx="2"/>
+                        <path stroke-linecap="round" d="M8 10h2v4H8zM14 10h2M14 14h2M7 4v2M12 4v2M17 4v2M7 18v2M12 18v2M17 18v2"/>
+                    </svg>
+                </div>
+                <div class="flex-grow">
+                    <h2 class="font-bold text-base text-[#1E293B]">Placas e Componentes</h2>
+                    <p class="text-xs text-slate-600 mt-0.5">
+                        Placas-mãe, memórias, processadores e HDs (apague seus dados pessoais antes do descarte).
+                    </p>
+                </div>
+            </article>
+
+            <!-- Item 4: Cabos -->
+            <article class="bg-white border-2 border-[#1E293B] rounded-2xl p-3.5 flex items-center gap-4 card-interativo">
+                <div class="w-14 h-14 shrink-0 border-2 border-[#1E293B] rounded-xl bg-[#F8FAFC] flex items-center justify-center text-[#1E293B]">
+                    <!-- Ícone Cabo -->
+                    <svg class="w-7 h-7" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M7 7h3v4H7zM14 13h3v4h-3zM8.5 11v3a3 3 0 003 3h2.5"/>
+                    </svg>
+                </div>
+                <div class="flex-grow">
+                    <h2 class="font-bold text-base text-[#1E293B]">Cabos</h2>
+                    <p class="text-xs text-slate-600 mt-0.5">
+                        Cabos de força, HDMI, USB, fontes e carregadores enrolados para facilitar a triagem do cobre.
+                    </p>
+                </div>
+            </article>
+
+        </section>
+
+        <div class="mt-8 text-center">
+            <a href="ecopontos.html" class="inline-block border-2 border-[#1E293B] bg-[#10B981] hover:bg-[#059669] text-white font-bold text-sm px-6 py-3 rounded-full transition">
+                Ver onde descartar esses itens &rarr;
+            </a>
+        </div>
+    </main>
+
+    <!-- RODAPÉ SEMÂNTICO -->
+    <footer class="w-full max-w-md md:max-w-4xl mx-auto px-4 py-6 mt-auto text-center text-xs text-slate-500 border-t border-slate-200">
+        <p>&copy; 2026 EcoTech • Ciência da Computação UFFS Chapecó • ODS 12</p>
+    </footer>
+
+    <script>
+        const btn = document.getElementById('menu-btn');
+        const menu = document.getElementById('mobile-menu');
+        btn.addEventListener('click', () => menu.classList.toggle('hidden'));
+    </script>
+</body>
+</html>
